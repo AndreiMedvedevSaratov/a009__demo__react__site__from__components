@@ -1,0 +1,7 @@
+.search-form {
+	display: flex;
+}
+
+.navbar-wrapper {
+	justify-content: space-between;
+}
