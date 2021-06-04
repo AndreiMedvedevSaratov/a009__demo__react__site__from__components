@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Container, Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
+
+import About from './../Pages/About';
+import Blog from './../Pages/Blog';
+import Contacts from './../Pages/Contacts';
+import Home from './../Pages/Home';
+
 import './Header.css';
 import logo from '../assets/img/logo192.png';
 
@@ -7,7 +14,7 @@ export default class Header extends Component {
 	render() {
 		return (
 			<>
-				<Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark" >
+				<Navbar collapseOnSelect expand="md" bg="dark" variant="dark" >
 					<Container>
 						<Navbar.Brand href="/" >
 							<img
@@ -24,7 +31,7 @@ export default class Header extends Component {
 								<Nav.Link href="/"> Home </Nav.Link>
 								<Nav.Link href="/about"> About us </Nav.Link>
 								<Nav.Link href="/contacts"> Contacts </Nav.Link>
-								<Nav.Link href="/"> Blog </Nav.Link>
+								<Nav.Link href="/blog"> Blog </Nav.Link>
 							</Nav>
 							<Form inline className="search-form">
 								<FormControl
@@ -37,6 +44,15 @@ export default class Header extends Component {
 						</Navbar.Collapse>
 					</Container>
 				</Navbar>
+
+				<Router>
+					<Switch>
+						<Route exact path="/" component={Home} />
+						<Route exact path="/about" component={About} />
+						<Route exact path="/contacts" component={Contacts} />
+						<Route exact path="/blog" component={Blog} />
+					</Switch>
+				</Router>
 			</>
 		)
 	}
