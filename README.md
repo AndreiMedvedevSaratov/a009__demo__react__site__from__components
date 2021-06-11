@@ -1,4 +1,20 @@
-# react-site
+## a009__demo__react__site__from__components
+
+This project was created with React.
+
+I used React components and Bootstrap for React library.
+
+Status of project: Done!
+
+Deploy: https://andreimedvedevsaratov-movie-search.netlify.app/
+
+Technolody: React, Bootstrap-For-React
+
+For any additional information, feel free to contact with me by:
+Tel: +7-917-215-19-68
+e-mail: andreiok@gmail.com
+
+# info
 
 https://www.youtube.com/playlist?list=PLVfMKQXDAhGWamOcqqIsMAbsP6pl0vUtW
 
