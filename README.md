@@ -6,7 +6,7 @@ I used React components and Bootstrap for React library.
 
 Status of project: Done!
 
-Deploy: https://andreimedvedevsaratov-movie-search.netlify.app/
+Deploy: https://react-bootstrap-sample-site.netlify.app/
 
 Technolody: React, Bootstrap-For-React
 
